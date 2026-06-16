@@ -80,3 +80,22 @@ if minetest.get_modpath("stairs") then
         S("Outer Egerum Stair")
     )
 end
+
+-- Frok down here i have added customized stuff from my side jolever starts from here on
+-- Register Earth Rune Ore
+minetest.register_node("magic_materials:earth_rune_ore", {
+    description = "Earth Rune Ore",
+    tiles = {"magic_materials_earth_rune_ore.png"},
+    groups = {cracky = 3, stone = 1},
+    sounds = minetest.node_sound_stone_defaults(),
+    drop = "magic_materials:earth_rune", -- Drops the rune itself when mined
+})
+
+-- Register Light Rune Ore
+minetest.register_node("magic_materials:light_rune_ore", {
+    description = "Light Rune Ore",
+    tiles = {"magic_materials_light_rune_ore.png"},
+    groups = {cracky = 3, stone = 1},
+    sounds = minetest.node_sound_stone_defaults(),
+    drop = "magic_materials:light_rune", -- Drops the rune itself when mined
+})
