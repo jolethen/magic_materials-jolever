@@ -81,21 +81,27 @@ if minetest.get_modpath("stairs") then
     )
 end
 
--- Frok down here i have added customized stuff from my side jolever starts from here on
+-- Custom stuff added down here
 -- Register Earth Rune Ore
 minetest.register_node("magic_materials:earth_rune_ore", {
-    description = "Earth Rune Ore",
+    description = S("Earth Rune Ore"),
+    -- Use the line below if your texture includes the stone background:
     tiles = {"magic_materials_earth_rune_ore.png"},
+    -- OR use this line instead if your texture is transparent overlay:
+    -- tiles = {"default_stone.png^magic_materials_earth_rune_ore.png"},
     groups = {cracky = 3, stone = 1},
-    sounds = minetest.node_sound_stone_defaults(),
-    drop = "magic_materials:earth_rune", -- Drops the rune itself when mined
+    sounds = default.node_sound_stone_defaults(),
+    drop = "magic_materials:earth_rune", 
 })
 
 -- Register Light Rune Ore
 minetest.register_node("magic_materials:light_rune_ore", {
-    description = "Light Rune Ore",
+    description = S("Light Rune Ore"),
+    -- Use the line below if your texture includes the stone background:
     tiles = {"magic_materials_light_rune_ore.png"},
+    -- OR use this line instead if your texture is transparent overlay:
+    -- tiles = {"default_stone.png^magic_materials_light_rune_ore.png"},
     groups = {cracky = 3, stone = 1},
-    sounds = minetest.node_sound_stone_defaults(),
-    drop = "magic_materials:light_rune", -- Drops the rune itself when mined
+    sounds = default.node_sound_stone_defaults(),
+    drop = "magic_materials:light_rune", 
 })
