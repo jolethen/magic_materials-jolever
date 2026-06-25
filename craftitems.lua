@@ -76,7 +76,7 @@ minetest.register_craftitem("magic_materials:void_rune", {
 })
 
 minetest.register_craftitem("magic_materials:lightning_gem", {
-    description = S("Light Rune"),
+    description = S("Lightning Gem"),
     inventory_image = "magic_materials_light_rune.png",
 })
 
@@ -86,6 +86,6 @@ minetest.register_craftitem("magic_materials:energy_rune", {
 })
 
 minetest.register_craftitem("magic_materials:earth_gem", {
-    description = S("Earth Rune"),
+    description = S("Earth Gem"),
     inventory_image = "magic_materials_earth_rune.png",
 })
