@@ -83,7 +83,7 @@ end
 
 -- Custom stuff added down here
 -- Register Earth Rune Ore
-minetest.register_node("magic_materials:earth_rune_ore", {
+minetest.register_node("magic_materials:earth_gemstone", {
     description = S("Earth Rune Ore"),
     -- Use the line below if your texture includes the stone background:
     tiles = {"magic_materials_earth_rune_ore.png"},
@@ -91,17 +91,17 @@ minetest.register_node("magic_materials:earth_rune_ore", {
     -- tiles = {"default_stone.png^magic_materials_earth_rune_ore.png"},
     groups = {cracky = 3, stone = 1},
     sounds = default.node_sound_stone_defaults(),
-    drop = "magic_materials:earth_rune", 
+    drop = "magic_materials:earth_gem", 
 })
 
 -- Register Light Rune Ore
-minetest.register_node("magic_materials:light_rune_ore", {
-    description = S("Light Rune Ore"),
+minetest.register_node("magic_materials:light_gemstone", {
+    description = S("Light Gemstone"),
     -- Use the line below if your texture includes the stone background:
     tiles = {"magic_materials_light_rune_ore.png"},
     -- OR use this line instead if your texture is transparent overlay:
     -- tiles = {"default_stone.png^magic_materials_light_rune_ore.png"},
     groups = {cracky = 3, stone = 1},
     sounds = default.node_sound_stone_defaults(),
-    drop = "magic_materials:light_rune", 
+    drop = "magic_materials:light_gem", 
 })
