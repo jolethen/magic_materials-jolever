@@ -105,3 +105,21 @@ minetest.register_node("magic_materials:light_gemstone", {
     sounds = default.node_sound_stone_defaults(),
     drop = "magic_materials:light_gem", 
 })
+
+-- Register Earth Gemstone Block
+minetest.register_node("magic_materials:earth_gemstone_block", {
+    description = S("Earth Gemstone Block"),
+    tiles = {"magic_materials_earth_block.png"},
+    is_ground_content = false,
+    groups = {cracky = 1, level = 2},
+    sounds = default.node_sound_stone_defaults(),
+})
+
+-- Register Lightning Gemstone Block
+minetest.register_node("magic_materials:lightning_gemstone_block", {
+    description = S("Lightning Gemstone Block"),
+    tiles = {"magic_materials_lightning_block.png"},
+    is_ground_content = false,
+    groups = {cracky = 1, level = 2},
+    sounds = default.node_sound_stone_defaults(),
+})
