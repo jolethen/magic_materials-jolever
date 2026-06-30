@@ -123,3 +123,21 @@ minetest.register_node("magic_materials:lightning_gemstone_block", {
     groups = {cracky = 1, level = 2},
     sounds = default.node_sound_stone_defaults(),
 })
+
+-- Register Earth Core
+minetest.register_node("magic_materials:earth_core", {
+    description = S("Earth Core"),
+    tiles = {"magic_materials_earth_core.png"},
+    is_ground_content = false,
+    groups = {cracky = 1, level = 3},
+    sounds = default.node_sound_stone_defaults(),
+})
+
+-- Register Lightning Core
+minetest.register_node("magic_materials:lightning_core", {
+    description = S("Lightning Core"),
+    tiles = {"magic_materials_lightning_core.png"},
+    is_ground_content = false,
+    groups = {cracky = 1, level = 3},
+    sounds = default.node_sound_stone_defaults(),
+})
